@@ -1,0 +1,76 @@
+while True:
+      houses = {
+         "gryffindor": 0,
+         "ravenclaw": 0,
+         "hufflepuff": 0,
+         "slytherin": 0,
+        }
+      print("Do you like Dawn or Dusk?")
+      print(" Dawn is 1 Dusk is 2")
+      answer = int(input('enter your answer(1,2):'))
+
+      if answer == 1:
+         print("gryffindor and ravenclaw both get +1")
+         houses["gryffindor"] += 1
+         houses["ravenclaw"] += 1
+      elif answer == 2:
+         print("hufflepuff and slytherin both get +1")
+         houses["hufflepuff"] += 1
+         houses["slytherin"] += 1
+      else:
+         print("wrong input.")
+      print('answer')
+      #success!! Q1 complete.
+      print("When I'm dead, I want people to remeber me as")
+      print('1. The Good')
+      print('2. The Great')
+      print('3. The Wise')
+      print('4. The Bold')
+      answers_2 = int(input('enter your answer(1,4):'))
+
+      if answers_2 == 1:
+         print('hufflepuff +2')
+         houses["hufflepuff"]+= 2
+      elif answers_2 == 2:
+         print(' slytherin +2')
+         houses["slytherin"] += 2
+      elif answers_2 == 3:
+         print('ravenclaw +2')
+         houses["ravenclaw"] += 2
+      elif answers_2 == 4:
+         print('gryffindor +2')
+         houses["gryffindor"] += 2
+      else:
+         print("wrong input.")
+      print('answers_2')
+      # Q2 complete!!
+      print("what kind of instrument most pleases your ear?")
+      print('1.The violin')
+      print('2.The trumpet')
+      print('3.The piano')
+      print('4.The drum')
+      Answer_3 = int(input("Enter your answer (1,4)"))
+      if Answer_3 == 1:
+         print('slytherin +4')
+         houses["slytherin"] += 4
+      elif Answer_3 == 2:
+         print('hufflepuff +4')
+         houses["hufflepuff"] += 4
+      elif Answer_3 == 3:
+         print(' ravenclaw +4')
+         houses["ravenclaw"] += 4
+      elif Answer_3 == 4:
+         print('gryffindor +4')
+         houses["gryffindor"] += 4
+      else:
+         print("wrong input.")
+      print('Answer_3')
+      # all 3 complete!! now tally up those points and print the result.
+      winner = max(houses, key=houses.get)
+      print("you are a", winner.capitalize())
+      #success!
+      play_again = input("do you want to play again? (yes,no)").lower()
+      if play_again != "yes":
+         print("thanks for playing!")
+         break
+         #bravo first project complete!
